@@ -15,13 +15,13 @@ echo.
 set "c="
 set /P c="%cd%>"
 
-if /I "%c%" EQU "cam" (
-    start http://192.168.29.158
+if /I "%c%" EQU "ls" (
+    dir
     goto typecmd
 )
 
-if /I "%c%" EQU "admin" (
-    start https://192.168.29.1
+if /I "%c%" EQU "clear" (
+    cls
     goto typecmd
 )
 
